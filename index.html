@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomofocos</title>
+    <link rel="stylesheet" href="reset.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,400;9..40,500;9..40,600&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+    <nav id="navbar">
+        <div>
+            <h1 id="titulo"><i class="bi bi-clock"></i>Pomo<strong>focus</strong></h1>
+        </div>
+
+        <div id="navbar_div_principal">
+            <div class="navbar_div">
+                <button id="settings" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    <i class="bi bi-gear"></i> Configurações
+                </button>
+            </div>
+            <div class="navbar_div">
+                <button class="btn btn-secondary">
+                    <i class="bi bi-person"></i>Conectar-se
+                </button>
+            </div>
+        </div>
+
+    </nav>
+    <hr style="margin: 20px auto;">
+    <section id="section_principal" class="shadow-lg">
+        <ul id="lista">
+            <li class="item_lista">Foco</li>
+            <li class="item_lista">Descanso Curto</li>
+            <li class="item_lista">Descanso Longo</li>
+        </ul>
+        <div id="div_contador">
+            <h2 class="contador" id="contador">00:00:00</h2>
+        </div>
+        
+        <section id="tempo_config" class="oculta">
+            <label for="horas">Horas:</label>
+            <input class="btn btn-light rounded-0" type="number" id="horas" max="60" min="1">
+            <label for="minutos">Minutos:</label>
+            <input class="btn btn-light rounded-0" type="number" id="minutos" max="60" min="1">
+            <label for="segundos">Segundos:</label>
+            <input class="btn btn-light rounded-0" type="number" id="segundos" max="60" min="60">
+        </section>
+
+        <div id="div_botao">
+            <button class="botao_comecar" id="btn_iniciar">
+                <h2 id="titulo_comecar">Começar <i id="icone_iniciar_pausar" class="bi bi-play-fill"></i></h2>
+            </button>
+        </div>
+    </section>
+
+    <section id="section_add_tarefas">
+        <h2 id="titulo_tarefas">Tarefas:</h2>
+        <i class="bi bi-list"></i>
+    </section>
+    <hr class="divisao_tarefas">
+    <div id="adiona_tarefa">
+        <button class="botao_adicionar_tarefa">
+            Adicionar Tarefa <i class="bi bi-plus-square-dotted"></i>
+        </button>
+    </div>
+
+    <section id="section_tarefas" class="">
+        <div class="tarefa shadow-lg">
+            <div class="div_icone">
+                <i class="bi bi-circle"></i>
+            </div>
+            <div class="div_nome">
+                Tarefa x
+            </div>
+            <div class="div_lixeira">
+                <i class="bi bi-trash3-fill"></i>
+            </div>
+        </div>
+    </section>
+    <br><br><br>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+
+</html>
