@@ -1,10 +1,10 @@
- :root{
+ /* :root{
     --cor-um: #60A4BD;
     --cor-dois: #627F8A;
     --cor-tres: #49C3EF;
     --cor-quatro: #4D5457;
     --cor-cinco: #232F33;
-}
+} */
 
 body{
     height: 100vh;
@@ -51,19 +51,6 @@ hr {
     border: 1px solid black;
     display: flex;
     justify-content: center;
-}
-
-.botao_comecar{
-    padding: 1.5em;
-    width: 50%;
-    margin: 0 auto;
-    outline: none;
-    background-color: var(--cor-tres);
-    color: white;
-    text-transform: uppercase;
-    border: 0;
-    border-radius: 2px;
-
 }
 
 .divisao_tarefas{
@@ -127,6 +114,50 @@ hr {
     display: none;
 }
 
+.div_botao{
+    display: flex;
+    margin: auto;
+    align-items: center;
+}
+
+.botao_comecar{
+    padding: 1.5em;
+    width: 50%;
+    margin: 0 auto;
+    outline: none;
+    background-color: #212628;
+    color: white;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 2px;
+}
+
+.botao_reset{
+    font-size: 1.20em;
+    display: flex;
+    margin: 1em auto 1em auto;
+    align-items: center;
+    outline: none;
+    background-color: #212628;
+    color: white;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 2px;
+}
+
+.botao_pausar{
+    font-size: 1.20em;
+    display: flex;
+    margin: 1em auto 1em auto;
+    align-items: center;
+    outline: none;
+    background-color: #212628;
+    color: white;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 2px;
+}
+
 .bi-plus-square{margin-left: 10px;}
 .bi-list{color: #212628; cursor: pointer;}
 
@@ -172,12 +203,6 @@ hr {
 #contador{
     font-size: 7em;
     text-align: center;
-}
-#div_botao{
-    display: flex;
-    margin: auto;
-    align-items: center;
-    padding-bottom: 2em;
 }
 
 #tempo_config{
