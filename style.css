@@ -38,6 +38,63 @@ hr {
     justify-content: space-between;
     gap: 10px;
 }
+
+#configurar_tempo{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#section_add_tarefas{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 2em;
+    width: 70%;
+    margin: auto;
+}
+#adiona_tarefa{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2em;
+    width: 70%;
+    margin: auto;
+}
+
+#section_principal{
+    width: 70%;
+    height: 45vh;
+    margin: auto;
+    border: 1px solid black;
+    background-color: var(--cor-quatro);
+    color: var(--cor-tres);
+}
+#lista {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2em;
+}
+#contador{
+    font-size: 7em;
+    text-align: center;
+}
+
+#tempo_config{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+#section_tarefas{
+    background-color: transparent;
+}
+
+#div_contador{
+    margin: 2em auto;
+}
+
 .navbar_div{
     display: flex;
     align-items: center;
@@ -110,113 +167,48 @@ hr {
     cursor: pointer;
 }
 
-.oculta {
+.hidden {
     display: none;
 }
 
 .div_botao{
     display: flex;
-    margin: auto;
-    align-items: center;
-}
-
-.botao_comecar{
-    padding: 1.5em;
-    width: 50%;
-    margin: 0 auto;
-    outline: none;
-    background-color: #212628;
-    color: white;
-    text-transform: uppercase;
-    border: 0;
-    border-radius: 2px;
-}
-
-.botao_reset{
-    font-size: 1.20em;
-    display: flex;
-    margin: 1em auto 1em auto;
-    align-items: center;
-    outline: none;
-    background-color: #212628;
-    color: white;
-    text-transform: uppercase;
-    border: 0;
-    border-radius: 2px;
-}
-
-.botao_pausar{
-    font-size: 1.20em;
-    display: flex;
-    margin: 1em auto 1em auto;
-    align-items: center;
-    outline: none;
-    background-color: #212628;
-    color: white;
-    text-transform: uppercase;
-    border: 0;
-    border-radius: 2px;
-}
-
-.bi-plus-square{margin-left: 10px;}
-.bi-list{color: #212628; cursor: pointer;}
-
-
-#configurar_tempo{
-    text-align: center;
-    display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#titulo_comecar{
+.botao_comecar_ou_pausar{
+    padding: 0.7em 1em;
+    width: 40%;
+    height: 60px;
+    margin-left: 2em;
+    outline: none;
+    background-color: #212628;
+    color: white;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 2px;
+}
+
+.titulo_comecar_ou_pausar{
     font-size: 1.5em;
 }
-#section_add_tarefas{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 2em;
-    width: 70%;
-    margin: auto;
-}
-#adiona_tarefa{
-    display: flex;
-    justify-content: space-around;
-    padding-top: 2em;
-    width: 70%;
-    margin: auto;
+
+.botao_reset{
+    font-size: 2.5em;
+    border: 0;
+    background: transparent;
 }
 
-#section_principal{
-    width: 70%;
-    margin: auto;
-    border: 1px solid black;
-    background-color: var(--cor-quatro);
-    color: var(--cor-tres);
-}
-#lista {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 2em;
-}
-#contador{
-    font-size: 7em;
-    text-align: center;
-}
+.bi-plus-square{margin-left: 10px;}
+.bi-list{color: #212628; cursor: pointer;}
+.bi-arrow-counterclockwise{color: black;}
 
-#tempo_config{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 1em;
-}
 
-#section_tarefas{
-    background-color: transparent;
-}
-
-#div_contador{
-    margin: 2em auto;
+.botao_comecar_ou_pausar:focus{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 3px groove #474f52;
 }
 

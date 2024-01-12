@@ -15,25 +15,31 @@ const som_play = new Audio('sons/play.wav')
 const beep = new Audio('sons/beep.mp3')
 const pause = new Audio('sons/pause.mp3')
 
-
 btn_iniciar.addEventListener('click', () => {
     pausar()
     som_play.play()
     cron = setInterval(() => { timer(); }, 10)
+    btn_iniciar.classList.add('hidden')
+    btn_pausar.classList.remove('hidden')
 })
 
-btn_pausar.addEventListener('click', () => pausar())
+btn_pausar.addEventListener('click', function pausar() {
+    clearInterval(cron)
+    pause.play()
+    btn_iniciar.classList.remove('hidden')
+    btn_pausar.classList.add('hidden')
+})
 
 btn_reset.addEventListener('click', function reset() {
     horas = 0
     minutos = 0
     segundos = 0
     contador.innerHTML = '00:00:00'
+    clearInterval(cron)
 })
 
 function pausar() {
     clearInterval(cron)
-    pause.play()
 }
 
 function timer() {
