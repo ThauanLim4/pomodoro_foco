@@ -2,8 +2,11 @@ let btn_iniciar = document.getElementById('btn_iniciar');
 let btn_pausar = document.getElementById('btn_pausar')
 let btn_reset = document.getElementById('btn_reset')
 let settings = document.getElementById('settings');
+let contexto = document.querySelectorAll('.item_lista')
 let salvar_config = document.getElementById('btn_salvar_configuracoes')
 let contador = document.getElementById('contador')
+let botao_adicionar_tarefa = document.getElementById('botao_adicionar_tarefa')
+
 
 let segundos = 0
 let minutos = 0
@@ -11,9 +14,18 @@ let horas = 0
 let milisegundos = 0
 let cron;
 
+const html = document.querySelector('html')
 const som_play = new Audio('sons/play.wav')
 const beep = new Audio('sons/beep.mp3')
 const pause = new Audio('sons/pause.mp3')
+const cronometro = document.getElementById('cronometro')
+const temporizador = document.getElementById('temporizador')
+
+cronometro.addEventListener('click', () =>{
+    cronometro.classList.add('active')
+    document.getElementById('temporizador').classList.remove('active')
+
+})
 
 btn_iniciar.addEventListener('click', () => {
     pausar()
@@ -37,6 +49,8 @@ btn_reset.addEventListener('click', function reset() {
     contador.innerHTML = '00:00:00'
     clearInterval(cron)
 })
+
+
 
 function pausar() {
     clearInterval(cron)

@@ -6,6 +6,13 @@
     --cor-cinco: #232F33;
 } */
 
+:root {
+    --neon1: #222831;
+    --neon2: #393E46;
+    --neon3: #FFD369;
+    --neon4: #EEEEEE;
+}
+
 body{
     height: 100vh;
     font-family: 'DM Sans', sans-serif;
@@ -118,12 +125,7 @@ hr {
 .item_lista{
     font-size: 1.25em;
     font-weight: 400;
-}
-.item_lista:hover{
-    color: white;
-    background-color: #212628;
     cursor: pointer;
-    transition: all 500ms;
 }
 .botao_adicionar_tarefa{
     padding: 1em;
@@ -131,7 +133,7 @@ hr {
     margin: 0 auto;
     outline: none;
     background-color: var(--cor-tres);
-    color: white;
+    color: #212628;
     text-transform: uppercase;
     border: 1px dashed black;
     border-radius: 2px;
@@ -139,6 +141,11 @@ hr {
     justify-content: center;
     align-items: center;
     gap: 0.5em;
+}
+
+.adicionar_tarefa{
+    text-align: center;
+    margin-top: 1.5em;
 }
 
 .tarefa{
@@ -177,17 +184,26 @@ hr {
     justify-content: center;
 }
 
+.contador {
+    cursor: pointer;
+}
+
 .botao_comecar_ou_pausar{
     padding: 0.7em 1em;
     width: 40%;
     height: 60px;
     margin-left: 2em;
     outline: none;
-    background-color: #212628;
+    background-color: var(--neon1);
     color: white;
     text-transform: uppercase;
     border: 0;
     border-radius: 2px;
+}
+
+.botao_comecar_ou_pausar:hover{
+    box-shadow: 0px 4px 4px 3px #393E46;
+    transition: all 200ms;
 }
 
 .titulo_comecar_ou_pausar{
@@ -200,6 +216,55 @@ hr {
     background: transparent;
 }
 
+.nome_da_tarefa{
+    width: 45%;
+    height: 250px;
+    text-align: center;
+    border: 2px solid #212628;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 100px solid #393E46;
+
+}
+
+.active{
+    background-color: #393E46;
+    color: #EEEEEE;
+    padding: 0.3em 0.5em;
+}
+
+.nome_tarefa{
+    outline: none;
+    border: none;
+}
+.botao_salvar_nome_tarefa{
+    padding: 0.5em;
+    margin-left: 2em;
+    outline: none;
+    background-color: var(--neon1);
+    color: white;
+    text-transform: uppercase;
+    border: 0;
+    height: 50px;
+}
+
+@keyframes giro-completo{
+    0% {rotate: 0deg}
+    25% {rotate: 90deg}
+    50% {rotate: 180deg}
+    75% {rotate: 270deg}
+    100% {rotate: 360deg}
+}
+.botao_reset:hover{
+    animation-name: giro-completo;
+    animation-duration: 0.5s;
+    animation-direction: reverse;
+    animation-timing-function: ease-out;
+
+}
+
 .bi-plus-square{margin-left: 10px;}
 .bi-list{color: #212628; cursor: pointer;}
 .bi-arrow-counterclockwise{color: black;}
@@ -209,6 +274,5 @@ hr {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    border: 3px groove #474f52;
 }
 
