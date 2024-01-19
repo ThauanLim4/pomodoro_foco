@@ -117,6 +117,18 @@ hr {
     justify-content: center;
 }
 
+.botao{
+    background-color: transparent;
+    border: none;
+    text-transform: uppercase;
+    color: #222831;
+}
+
+.active{
+    background-color: #FFD369;
+    padding: auto 0.5em;
+}
+
 .divisao_tarefas{
     display: block;
     margin: auto;
@@ -227,12 +239,6 @@ hr {
     align-items: center;
     border-bottom: 100px solid #393E46;
 
-}
-
-.active{
-    background-color: #393E46;
-    color: #EEEEEE;
-    padding: 0.3em 0.5em;
 }
 
 .nome_tarefa{
