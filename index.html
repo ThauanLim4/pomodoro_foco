@@ -52,24 +52,53 @@
                 <button data-contexto="cronometro" class="botao botao_cronometro botao_reset_configs">Cronômetro</button>
             </li>
         </ul>
-        <div id="div_contador">
-            <h2 class="contador" id="contador">
-                <span id="horas" name="horas">00</span>:<span id="minutos" name="minutos">00</span>:<span id="segundos" name="segundos">00</span><span id="milisegundos" name="milisegundos"></span>
-                <div id="x"></div>
-            </h2>
-        </div>
 
-        <div class="div_botao">
-            <button class="botao_comecar_ou_pausar" id="btn_iniciar">
-                <h2 class="titulo_comecar_ou_pausar">Começar <i id="icone_iniciar_pausar" class="bi bi-play-fill"></i></h2>
-            </button>
-            <button class="hidden botao_comecar_ou_pausar" id="btn_pausar">
-                <h2 class="titulo_comecar_ou_pausar">Pausar<i class="bi bi-pause"></i></h2>
-            </button>
-            <button class="botao_reset" id="btn_reset">
-                <i id="i_reset" class="bi bi-arrow-counterclockwise"></i>
-            </button>
-        </div>
+        <!-- Seção do temporizador -->
+        
+        <section class="section_temporizador" id="section_temporizador">
+            <div id="div_temporizador" class="div_contador">
+                <h2 class="contador" id="contador">
+                    <span id="horas" name="horas">00</span>:<span id="minutos" name="minutos">00</span>:<span id="segundos" name="segundos">00</span><span id="milisegundos" name="milisegundos"></span>
+                    <div id="x"></div>
+                </h2>
+            </div>
+
+            <div class="div_botao_temporizador">
+                <button class="botao_comecar_ou_pausar" id="btn_iniciar_temporizador">
+                    <h2 class="titulo_comecar_ou_pausar">Começar <i id="icone_iniciar_pausar" class="bi bi-play-fill"></i></h2>
+                </button>
+                <button class="hidden botao_comecar_ou_pausar" id="btn_pausar">
+                    <h2 class="titulo_comecar_ou_pausar">Pausar<i class="bi bi-pause"></i></h2>
+                </button>
+                <button class="botao_reset" id="btn_reset">
+                    <i id="i_reset" class="bi bi-arrow-counterclockwise"></i>
+                </button>
+            </div>
+        </section>
+
+        <!-- Seção do cronômetro -->
+
+        <section class="section_cronometro hidden" id="section_cronometro">
+            <div id="div_cronometro" class="">
+                <h2 class="contador" id="cronometrador">
+            
+                    <div id="x"></div>
+                </h2>
+            </div>
+            <div class="div_botao_cronometro">
+                <button class="botao_comecar_ou_pausar" id="btn_iniciar_cronometro">
+                    <h2 class="titulo_comecar_ou_pausar">Começar <i id="icone_iniciar_pausar" class="bi bi-play-fill"></i></h2>
+                </button>
+                <button class="hidden botao_comecar_ou_pausar" id="btn_pausar_cronometro">
+                    <h2 class="titulo_comecar_ou_pausar">Pausar<i class="bi bi-pause"></i></h2>
+                </button>
+                <button class="botao_reset" id="btn_reset_cronometro">
+                    <i id="i_reset" class="bi bi-arrow-counterclockwise"></i>
+                </button>
+            </div>
+        </section>
+
+
     </section>
 
     <section id="section_add_tarefas">

@@ -26,7 +26,6 @@ hr {
     border: 2px solid black;
 }
 
-
 #titulo{
     font-size: 2em;
     text-align: center;
@@ -87,6 +86,11 @@ hr {
     text-align: center;
 }
 
+#cronometrador{
+    font-size: 7em;
+    text-align: center;
+}
+
 #tempo_config{
     display: flex;
     align-items: center;
@@ -96,10 +100,6 @@ hr {
 
 #section_tarefas{
     background-color: transparent;
-}
-
-#div_contador{
-    margin: 2em auto;
 }
 
 .navbar_div{
@@ -190,7 +190,7 @@ hr {
     display: none;
 }
 
-.div_botao{
+.div_botao_temporizador, .div_botao_cronometro{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -198,6 +198,10 @@ hr {
 
 .contador {
     cursor: pointer;
+}
+
+.div_contador{
+    margin: 2em auto;
 }
 
 .botao_comecar_ou_pausar{
