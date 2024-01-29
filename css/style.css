@@ -1,8 +1,3 @@
-/* Extra small devices (phones, 600px and down) */
-/* Small devices (portrait tablets and large phones, 600px and up) */
-/* Medium devices (landscape tablets, 768px and up) */
-/* Large devices (laptops/desktops, 992px and up) */
-/* Extra large devices (large laptops and desktops, 1200px and up) */
 body {
   height: 100vh;
   font-family: "DM Sans", sans-serif;
@@ -22,15 +17,17 @@ hr {
 #navbar {
   height: 5em;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
+  gap: 1em;
 }
 #navbar #titulo {
   font-size: 2em;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+}
+#navbar .relogio {
+  font-size: 0.9em;
+  margin-right: 0.2em;
 }
 #navbar #navbar_div_principal {
   display: flex;
@@ -66,7 +63,7 @@ hr {
   text-align: center;
 }
 #section_principal #section_temporizador #contador {
-  font-size: 3em;
+  font-size: 50px;
   margin: auto;
 }
 #section_principal #section_temporizador .div_botao_temporizador {
@@ -105,14 +102,14 @@ hr {
   margin: auto;
 }
 #section_principal #section_cronometro #cronometrador {
-  font-size: 3em;
+  font-size: 100px;
   margin: auto;
 }
 #section_principal #section_cronometro .div_botao_cronometro {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 3em;
+  margin-top: 2em;
 }
 #section_principal #section_cronometro .div_botao_cronometro .botao_comecar_ou_pausar {
   padding: 0.7em 1em;
@@ -198,7 +195,7 @@ hr {
 }
 
 .active {
-  background-color: #FFD369;
+  background-color: #FDF0D1;
   padding: auto 0.5em;
 }
 
