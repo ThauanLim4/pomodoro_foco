@@ -1,0 +1,390 @@
+@import 'breakPoints';
+
+$cor1: #643843;
+$cor2: #85586F;
+$cor3: #AC7D88;
+$neon1: #222831;
+$neon2: #393E46;
+$neon3: #FFD369;
+$neon4: #EEEEEE;
+$bgcolor1: #3E3232;
+$bgcolor2: #503C3C;
+$bgcolor3: #7E6363;
+$bgcolor4: #A87C7C;
+
+body {
+    height: 100vh;
+    font-family: 'DM Sans', sans-serif;
+    // background: linear-gradient(180deg, #643843, #85586F, #AC7D88);
+    background: linear-gradient(180deg, #A87C7C, #7E6363, #503C3C)
+}
+
+strong {
+    font-weight: 500;
+}
+
+hr {
+    width: 75%;
+    margin: 2em auto;
+    border: 2px solid black;
+}
+
+#navbar {
+    height: 5em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    #titulo {
+        font-size: 2em;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #navbar_div_principal {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+
+        .navbar_div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+}
+
+#section_principal {
+    width: 275px;
+    height: 32vh;
+    margin: auto;
+    border: 1px solid black;
+    background-color: transparent;
+    color: var(--cor-tres);
+
+    #lista {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 1em;
+
+        .item_lista {
+            font-weight: 400;
+            cursor: pointer;
+        }
+    }
+
+    // Seção do temporizador 
+
+    #section_temporizador {
+        margin: auto;
+        text-align: center;
+
+        #contador {
+            font-size: 3em;
+            margin: auto;
+        }
+
+        .div_botao_temporizador {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .botao_comecar_ou_pausar {
+                padding: 0.7em 1em;
+                width: 70%;
+                height: fit-content;
+                margin-left: 2em;
+                outline: none;
+                background-color: $neon1;
+                color: $neon4;
+                text-transform: uppercase;
+                border: 0;
+                border-radius: 2px;
+                text-align: center;
+
+                .botao_comecar_ou_pausar:hover {
+                    box-shadow: 0px 4px 4px 3px #393E46;
+                    transition: all 200ms;
+                }
+
+                .titulo_comecar_ou_pausar {
+                    font-size: 1em;
+                }
+            }
+
+            .botao_reset {
+                font-size: 2.5em;
+                border: 0;
+                background: transparent;
+            }
+        }
+    }
+
+    // Seção do Cronometro
+
+    #section_cronometro {
+        text-align: center;
+        margin: auto;
+
+        #cronometrador {
+            font-size: 3em;
+            margin: auto;
+        }
+
+        .div_botao_cronometro {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 3em;
+
+            .botao_comecar_ou_pausar {
+                padding: 0.7em 1em;
+                width: 70%;
+                height: fit-content;
+                margin-left: 2em;
+                outline: none;
+                background-color: $neon1;
+                color: $neon4;
+                text-transform: uppercase;
+                border: 0;
+                border-radius: 2px;
+                text-align: center;
+            }
+
+
+            .titulo_comecar_ou_pausar {
+                font-size: 1em;
+            }
+
+            .botao_reset {
+                font-size: 2.5em;
+                border: 0;
+                background: transparent;
+            }
+        }
+
+        .botao_comecar_ou_pausar:hover {
+            box-shadow: 0px 4px 4px 3px #393E46;
+            transition: all 200ms;
+        }
+    }
+}
+
+
+#configurar_tempo {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#section_add_tarefas {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 2em;
+    width: 70%;
+    margin: auto;
+}
+
+#adiona_tarefa {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2em;
+    width: 70%;
+    margin: auto;
+}
+
+#cronometrador {
+    font-size: 7em;
+    text-align: center;
+}
+
+#tempo_config {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+#section_tarefas {
+    background-color: transparent;
+}
+
+
+.titulo_secondaria_navbar {
+    font-size: 1.5em;
+    padding: 0.3em;
+    color: white;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+}
+
+.botao {
+    background-color: transparent;
+    border: none;
+    text-transform: uppercase;
+    color: #222831;
+}
+
+.active {
+    background-color: #FFD369;
+    padding: auto 0.5em;
+}
+
+.divisao_tarefas {
+    display: block;
+    margin: auto;
+    border: 1px solid black;
+}
+
+.botao_adicionar_tarefa {
+    padding: 1em;
+    width: 75%;
+    margin: 0 auto;
+    outline: none;
+    background-color: var(--cor-tres);
+    color: #212628;
+    text-transform: uppercase;
+    border: 1px dashed black;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.adicionar_tarefa {
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+.tarefa {
+    width: 75%;
+    height: fit-content;
+    display: flex;
+    background-color: var(--cor-cinco);
+    margin: 20px auto;
+    padding: 1em;
+    font-size: 1.5em;
+    border: 2px solid #212628;
+    color: var(--cor-tres);
+}
+
+.div_icone {
+    text-align: center;
+    width: 10%;
+    cursor: pointer;
+}
+
+.div_nome {
+    width: 75%;
+}
+
+.div_lixeira {
+    width: 15%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+.contador {
+    cursor: pointer;
+    width: 80%;
+    box-sizing: border-box;
+}
+
+.div_contador {
+    margin: 2em auto;
+}
+
+
+
+.nome_da_tarefa {
+    width: 45%;
+    height: 250px;
+    text-align: center;
+    border: 2px solid #212628;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 100px solid #393E46;
+
+}
+
+.nome_tarefa {
+    outline: none;
+    border: none;
+}
+
+.botao_salvar_nome_tarefa {
+    padding: 0.5em;
+    margin-left: 2em;
+    outline: none;
+    background-color: var(--neon1);
+    color: white;
+    text-transform: uppercase;
+    border: 0;
+    height: 50px;
+}
+
+@keyframes giro-completo {
+    0% {
+        rotate: 0deg
+    }
+
+    25% {
+        rotate: 90deg
+    }
+
+    50% {
+        rotate: 180deg
+    }
+
+    75% {
+        rotate: 270deg
+    }
+
+    100% {
+        rotate: 360deg
+    }
+}
+
+.botao_reset:hover {
+    animation-name: giro-completo;
+    animation-duration: 0.5s;
+    animation-direction: reverse;
+    animation-timing-function: ease-out;
+
+}
+
+.bi-plus-square {
+    margin-left: 10px;
+}
+
+.bi-list {
+    color: #212628;
+    cursor: pointer;
+}
+
+.bi-arrow-counterclockwise {
+    color: black;
+}
+
+
+.botao_comecar_ou_pausar:focus {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
