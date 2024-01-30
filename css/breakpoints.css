@@ -1,15 +1,31 @@
-  /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (max-width: 599px){
+    .contador {
+        font-size: 50px;
+        margin: auto;
+    }
+    .cronometrador {
+        font-size: 70px;
+        margin: auto;
+    }
+ }
+ 
+ /* Small devices (portrait tablets and large phones, 600px and up) */
   @media only screen and (min-width: 600px) {
     #section_principal {
         width: 425px;
-        height: 37vh;
+        height: 39vh;
         margin: auto;
         font-size: 1.2em;
     }
 
-    #contador {
+    .contador {
+        font-size: 70px;
         margin: auto;
-    } 
+    }
+    .cronometrador {
+        font-size: 90px;
+        margin: auto;
+    }
 
     .botao_comecar_ou_pausar {
         width: 200px;
@@ -20,7 +36,16 @@
   @media only screen and (min-width: 768px) {
     #section_principal {
         width: 550px;
-        height: 40vh;
+        height: 41vh;
+        margin: auto;
+    }
+
+    .contador {
+        font-size: 80px;
+        margin: auto;
+    }
+    .cronometrador {
+        font-size: 100px;
         margin: auto;
     }
 
@@ -33,13 +58,13 @@
   @media only screen and (min-width: 992px) {
     #section_principal {
         width: 720px;
-        height: 40vh;
+        height: 43vh;
         margin: auto;
     }
 
     #contador {
         margin: auto;
-        font-size: 120px;
+        font-size: 80px;
     } 
 
     .botao_comecar_ou_pausar {
@@ -51,13 +76,13 @@
   @media only screen and (min-width: 1200px) {
     #section_principal {
         width: 720px;
-        height: 40vh;
+        height: 43vh;
         margin: auto;
     }
 
     #contador {
         margin: auto;
-        font-size: 120px;
+        font-size: 80px;
     } 
 
     .botao_comecar_ou_pausar {

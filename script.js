@@ -24,6 +24,7 @@ const som_play = new Audio('sons/play.wav')
 const beep = new Audio('sons/beep.mp3')
 const pause = new Audio('sons/pause.mp3')
 const alarm = new Audio('sons/alarm.mp3')
+const alarm_tempo_finalizado = new Audio('sons/alarm_tempo_finalizado.mp3')
 const fundo_temporizador = new Image('img/fundo_temporizador.svg')
 const fundo_cronometro = new Image('img/fundo_cronometro.svg')
 const cronometro = document.getElementById('cronometro')
@@ -100,6 +101,7 @@ function timer() {
 let div_temp = document.getElementById('div_temporizador')
 let div_cron = document.getElementById('div_cronometro')
 let cronometrador = document.getElementById('cronometrador')
+let alerta_tempo_finalizado = document.querySelector('.alerta_tempo_finalizado')
 let tempo_decorrido = 1500
 let a = null
 let cron;
@@ -131,11 +133,20 @@ function resetar_cronometro(){
 
 btn_reset_cronometro.addEventListener('click', resetar_cronometro)
 
+btn_pausar_cronometro.addEventListener('click', () =>{
+    btn_iniciar_cronometro.classList.remove('hidden')
+    btn_pausar_cronometro.classList.add('hidden')
+    pausar2()
+    pause.play()
+})
+
 function tempo_finalizado(){
     if(tempo_decorrido <= 0){
-        alarm.play()
-        alert('Tempo Finalizado!')
-        reset()
+        alarm_tempo_finalizado.play()
+        alerta_tempo_finalizado.classList.remove('hidden')
+        resetar_cronometro()
+        setTimeout(function(){
+            alerta_tempo_finalizado.classList.add('hidden')}, 5000)
         return
     }
     tempo_decorrido -= 1

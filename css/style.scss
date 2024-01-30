@@ -45,6 +45,23 @@ hr {
         margin-right: 0.2em;
     }
 
+    .alerta_tempo_finalizado{
+        position: absolute;
+        margin-top: 30px;
+        background-color: #FDF0D1;
+        height: 100px;
+        width: 300px;
+        text-align: center;
+        border: 2px solid #222831;
+        box-shadow: 0px 4px 4px 3px #393E46;
+        text-transform: uppercase;
+
+
+        .titulo_tempo_finalizado{
+            margin-top: 35px;
+        }
+    }
+
     #navbar_div_principal {
         display: flex;
         justify-content: space-between;
@@ -85,11 +102,6 @@ hr {
         margin: auto;
         text-align: center;
 
-        #contador {
-            font-size: 50px;
-            margin: auto;
-        }
-
         .div_botao_temporizador {
             display: flex;
             justify-content: center;
@@ -101,17 +113,12 @@ hr {
                 height: fit-content;
                 margin-left: 2em;
                 outline: none;
-                background-color: $neon1;
+                background-color: $bgcolor3;
                 color: $neon4;
                 text-transform: uppercase;
-                border: 0;
+                border: 1px solid #222831;
                 border-radius: 2px;
                 text-align: center;
-
-                .botao_comecar_ou_pausar:hover {
-                    box-shadow: 0px 4px 4px 3px #393E46;
-                    transition: all 200ms;
-                }
 
                 .titulo_comecar_ou_pausar {
                     font-size: 1em;
@@ -123,6 +130,11 @@ hr {
                 border: 0;
                 background: transparent;
             }
+
+            .botao_comecar_ou_pausar:active {
+                box-shadow: inset 0px 4px 4px 3px #3E3232;
+                transition: all 200ms;
+            }
         }
     }
 
@@ -131,11 +143,6 @@ hr {
     #section_cronometro {
         text-align: center;
         margin: auto;
-
-        #cronometrador {
-            font-size: 100px;
-            margin: auto;
-        }
 
         .div_botao_cronometro {
             display: flex;
@@ -149,10 +156,10 @@ hr {
                 height: fit-content;
                 margin-left: 2em;
                 outline: none;
-                background-color: $neon1;
+                background-color: $bgcolor3;
+                border: 1px solid #222831;
                 color: $neon4;
                 text-transform: uppercase;
-                border: 0;
                 border-radius: 2px;
                 text-align: center;
             }
@@ -169,8 +176,8 @@ hr {
             }
         }
 
-        .botao_comecar_ou_pausar:hover {
-            box-shadow: 0px 4px 4px 3px #393E46;
+        .botao_comecar_ou_pausar:active {
+            box-shadow: inset 0px 4px 4px 3px #3E3232;
             transition: all 200ms;
         }
     }
@@ -199,11 +206,6 @@ hr {
     padding-top: 2em;
     width: 70%;
     margin: auto;
-}
-
-#cronometrador {
-    font-size: 7em;
-    text-align: center;
 }
 
 #tempo_config {
@@ -365,6 +367,7 @@ hr {
 
 .botao_reset:hover {
     animation-name: giro-completo;
+    animation-iteration-count: infinite;
     animation-duration: 0.5s;
     animation-direction: reverse;
     animation-timing-function: ease-out;
