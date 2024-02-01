@@ -10,6 +10,9 @@ $bgcolor2: #503C3C;
 $bgcolor3: #7E6363;
 $bgcolor4: #A87C7C;
 $corCreme: #FDF0D1;
+@mixin box-shadow($color){
+    box-shadow: 3px 3px 1px -1px $color;
+}
 
 body {
     height: 100vh;
@@ -367,7 +370,6 @@ hr {
 
 .botao_reset:hover {
     animation-name: giro-completo;
-    animation-iteration-count: infinite;
     animation-duration: 0.5s;
     animation-direction: reverse;
     animation-timing-function: ease-out;

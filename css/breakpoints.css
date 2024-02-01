@@ -1,4 +1,29 @@
- @media only screen and (max-width: 599px){
+@media only screen and (max-width: 374px){
+    #section_principal {
+        width: fit-content;
+        height: 255px;
+        /* height: 38vh; */
+        margin: auto;
+    }
+
+    .contador {
+        font-size: 35px;
+        margin: auto;
+    }
+    .cronometrador {
+        font-size: 50px;
+        margin: auto;
+    }
+ }
+ 
+ @media only screen and (min-width: 375px){
+    #section_principal {
+        width: 285px;
+        height: 285px;
+        /* height: 41vh; */
+        margin: auto;
+    }
+
     .contador {
         font-size: 50px;
         margin: auto;
@@ -13,9 +38,10 @@
   @media only screen and (min-width: 600px) {
     #section_principal {
         width: 425px;
-        height: 39vh;
+        height: 305px;
+        /* height: 43vh; */
         margin: auto;
-        font-size: 1.2em;
+        font-size: 1em;
     }
 
     .contador {
@@ -36,7 +62,8 @@
   @media only screen and (min-width: 768px) {
     #section_principal {
         width: 550px;
-        height: 41vh;
+        height: 325px;
+        /* height: 44vh; */
         margin: auto;
     }
 
@@ -57,8 +84,9 @@
   /* Large devices (laptops/desktops, 992px and up) */
   @media only screen and (min-width: 992px) {
     #section_principal {
-        width: 720px;
-        height: 43vh;
+        width: 570;
+        height: 325px;
+        /* height: 45vh; */
         margin: auto;
     }
 
@@ -75,8 +103,8 @@
   /* Extra large devices (large laptops and desktops, 1200px and up) */
   @media only screen and (min-width: 1200px) {
     #section_principal {
-        width: 720px;
-        height: 43vh;
+        width: 570px;
+        height: 325px;
         margin: auto;
     }
 

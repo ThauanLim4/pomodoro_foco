@@ -317,7 +317,6 @@ hr {
 }
 .botao_reset:hover {
   animation-name: giro-completo;
-  animation-iteration-count: infinite;
   animation-duration: 0.5s;
   animation-direction: reverse;
   animation-timing-function: ease-out;
